@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    font-size: 62.5%; /* 10px = 1rem*/
+    --bg-color: #EDF2FF;
+    --text-color: #00082F;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+}
+
+#container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+  
+img {
+    margin-top: 1rem;
+    border: 0.5rem solid var(--primary-color);
+    border-radius: 50%;
+}
+
+body.dark {
+    --bg-color: #00082F;
+    --text-color: #FFFFFF;
+}
+  
+  body.pink {
+    --bg-color: #e9cbd7;
+    --text-color: #1F000B;
+    --primary-color: #D6336C;
+    --primary-color-dark: #5a0925;
+}
+  
+  body.purple {
+    --bg-color: #b29ec4;
+    --text-color: #2e1930;
+    --primary-color: #531f7e;
+    --primary-color-dark: #26072e;
+}
+  
+  
+body {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    /* background-color: rgb(217, 175, 217); */
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+  
+p {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+  
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 3rem;
+}
+  
+.list-links {
+    color: white;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1.3rem;
+    
+    width: 250px;
+    padding: 1.6rem 1rem;
+    margin-bottom: 1.5rem;
+
+    transition: background 200ms;
+}
+
+.list-links:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+
+    padding-bottom: 1.9rem;
+
+    transition: transform .3s;  
+}
+
+.social-list li:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: var(--text-color);
+    opacity: 0.8;
+}
